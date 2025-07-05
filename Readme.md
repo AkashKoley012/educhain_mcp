@@ -1,100 +1,161 @@
-EduChain MCP Server
-This project implements an MCP (Modular Command Protocol) server using the MCP Python SDK and integrates it with EduChain. The server exposes tools and resources for educational content generation, including:
+# EduChain MCP Server
 
-📚 MCQ generation
-🧑‍🏫 Dynamic lesson planning
-🧠 Flashcard generation
+This project implements an MCP (Modular Command Protocol) server using the [MCP Python SDK](https://github.com/buildfastwithai/mcp-sdk) and integrates it with [EduChain](https://github.com/satvik314/educhain). The server exposes tools and resources for educational content generation, including:
 
-🧰 Tools & Technologies
+-   📚 MCQ generation
+-   🧑‍🏫 Dynamic lesson planning
+-   🧠 Flashcard generation
 
-✅ Python 3.11
-✅ MCP Python SDK (FastMCP)
-✅ EduChain Library
-✅ uv (dependency manager)
+---
 
-🚀 Features
+## 🧰 Tools & Technologies
 
-1. generate_mcqs (Tool)
-   Generates multiple-choice questions based on any topic and quantity.
-   Input:
-   {
-   "topic": "Python Loops",
-   "num": 5
-   }
+-   ✅ Python 3.11
+-   ✅ MCP Python SDK (`FastMCP`)
+-   ✅ EduChain Library
+-   ✅ uv (dependency manager)
 
-Output:Returns a list of structured MCQs with questions, options, correct answer, and explanation.
+---
 
-2. lesson://{subject} (Resource)
-   Returns a detailed lesson plan based on a given subject.
-   Input: "Python Programming Basics"Output: Structured lesson plan with objectives, topics, hands-on activities, and ethical considerations.
+## 🚀 Features
 
-3. generate_flashcards (Tool)
-   Generates flashcards for any topic, useful for revision or self-study.
-   Input:
-   {
-   "topic": "Python"
-   }
+### 1. `generate_mcqs` (Tool)
 
-Output:A list of flashcards with question (front), answer (back), and explanation.
+Generates multiple-choice questions based on any topic and quantity.
 
-🏁 How to Run
-📦 Install dependencies
+**Input:**
 
-Make sure you're using Python 3.11
+```json
+{
+    "topic": "Python Loops",
+    "num": 5
+}
+```
 
+**Output:**
+Returns a list of structured MCQs with questions, options, correct answer, and explanation.
+
+---
+
+### 2. `lesson://{subject}` (Resource)
+
+Returns a detailed lesson plan based on a given subject.
+
+**Input:** `"Python Programming Basics"`
+**Output:** Structured lesson plan with objectives, topics, hands-on activities, and ethical considerations.
+
+---
+
+### 3. `generate_flashcards` (Tool)
+
+Generates flashcards for any topic, useful for revision or self-study.
+
+**Input:**
+
+```json
+{
+    "topic": "Python"
+}
+```
+
+**Output:**
+A list of flashcards with question (front), answer (back), and explanation.
+
+---
+
+## 🏁 How to Run
+
+### 📦 Install dependencies
+
+> Make sure you're using **Python 3.11**
+
+```bash
 pip install uv
 uv venv --python=3.11
 uv pip install -r pyproject.toml
+```
 
-📝 Create a .env File
-Create a .env file in the project root directory to store your API key securely. Add the following line, replacing your_grok_api_key_here with the key obtained from the xAI console:
+### 📝 Create a .env File
+
+Create a `.env` file in the project root directory to store your API key securely. Add the following line, replacing `your_grok_api_key_here` with the key obtained from the xAI console:
+
+```
 GROQ_API_KEY=your_grok_api_key_here
+```
 
-To get your Grok API key, visit console.x.ai and sign up or log in to generate a new API key.
-▶️ Run the MCP server in dev mode
+To get your Grok API key, visit [console.x.ai](https://console.x.ai) and sign up or log in to generate a new API key.
+
+### ▶️ Run the MCP server in dev mode
+
+```bash
 uv run mcp dev server.py
+```
 
 You should see:
+
+```
 MCP Inspector is up and running at http://localhost:6274 🚀
+```
 
 Visit the inspector to test your tools interactively.
 
-🧪 Claude Desktop Integration
-To connect with Claude Desktop, add this to your claude_desktop_config.json:
+---
+
+## 🧪 Claude Desktop Integration
+
+To connect with Claude Desktop, add this to your `claude_desktop_config.json`:
+
+```json
 {
-"mcp_servers": [
-{
-"name": "EduChainMCP",
-"host": "http://localhost:8000"
+    "mcp_servers": [
+        {
+            "name": "EduChainMCP",
+            "host": "http://localhost:8000"
+        }
+    ]
 }
-]
-}
+```
 
 Then test with natural language prompts like:
 
-“Generate 5 MCQs on Python functions.”
-“Provide a lesson plan for data structures.”
-“Create flashcards for object-oriented programming.”
+-   “Generate 5 MCQs on Python functions.”
+-   “Provide a lesson plan for data structures.”
+-   “Create flashcards for object-oriented programming.”
 
-📁 Project Structure
+---
+
+## 📁 Project Structure
+
+```
 educhain-mcp-server/
-├── server.py # MCP server using FastMCP
+├── server.py                  # MCP server using FastMCP
 ├── claude_desktop_config.json
-├── lesson_plan.json # Sample output (optional)
-├── Sample_Responses.txt # Required for submission
-├── README.md # You're reading it!
-├── .env # Environment file for API key
+├── lesson_plan.json           # Sample output (optional)
+├── Sample_Responses.txt       # Required for submission
+├── README.md                  # You're reading it!
+├── .env                       # Environment file for API key
+```
 
-✅ Submission
+---
+
+## ✅ Submission
+
 Please email the GitHub repo link to:
 
-📧 prathmesh@buildfastwithai.com
-📧 shubham@buildfastwithai.com
+-   📧 [prathmesh@buildfastwithai.com](mailto:prathmesh@buildfastwithai.com)
+-   📧 [shubham@buildfastwithai.com](mailto:shubham@buildfastwithai.com)
 
-Bonus points for including a short Loom video demo!
+> Bonus points for including a short Loom video demo!
 
-👨‍💻 Author
-Akash KoleyB.Tech Graduate | EduChain Intern Assignment | Python & Data Science Enthusiast
+---
 
-📄 License
+## 👨‍💻 Author
+
+**Akash Koley**
+B.Tech Graduate | EduChain Intern Assignment | Python & Data Science Enthusiast
+
+---
+
+## 📄 License
+
 This project is intended for educational purposes and the BuildFastWithAI internship assignment. Please contact the author before reuse.
