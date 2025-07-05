@@ -1,0 +1,89 @@
+========================================
+COMMAND 1: Generate 5 multiple-choice questions on Python loops
+========================================
+
+Tool: generate_mcqs  
+Input:
+{
+  "topic": "Langchain and Langgraph",
+  "num": 2
+}
+
+Response:
+{
+  "result": [
+    {
+      "question": "What is Langchain?",
+      "options": [
+        "A type of programming language",
+        "A framework for building AI applications",
+        "A library for data analysis",
+        "A tool for machine learning"
+      ],
+      "answer": "A framework for building AI applications",
+      "explanation": "Langchain is an open-source framework that enables developers to build AI applications more efficiently. It provides a set of tools and libraries for tasks such as natural language processing, computer vision, and reinforcement learning."
+    },
+    {
+      "question": "What is Langgraph?",
+      "options": [
+        "A framework for building web applications",
+        "A library for data visualization",
+        "A library for building and training large language models",
+        "A tool for natural language processing"
+      ],
+      "answer": "A library for building and training large language models",
+      "explanation": "Langgraph is a library that allows developers to build and train large language models more efficiently. It provides a set of tools and APIs for tasks such as model training, fine-tuning, and deployment."
+    }
+  ]
+}
+
+
+========================================
+COMMAND 2: Provide a lesson plan for Python Programming Basics
+========================================
+
+Resource: lesson://Python Programming Basics  
+Input:  
+{
+  "topic": "Python",
+  "num": 2
+}
+
+Response:
+{
+  "contents": [
+    {
+      "uri": "lesson://Langgraph",
+      "mimeType": "text/plain",
+      "text": "{\n  \"title\": \"Exploring Langgraph: Understanding Language Models\",\n  \"subject\": \"Computer Science\",\n  \"learning_objectives\": [\n    \"Define and explain the concept of Langgraph and its applications\",\n    \"Analyze the architecture and components of Langgraph models\",\n    \"Evaluate the potential impact of Langgraph on natural language processing tasks\"\n  ],\n  \"lesson_introduction\": \"Imagine a world where machines can understand and generate human-like language. Welcome to the world of Langgraph, a revolutionary language model that is changing the way we interact with computers. In this lesson, we will delve into the world of Langgraph, exploring its architecture, applications, and potential impact on society.\",\n  \"main_topics\": [\n    {\n      \"title\": \"Introduction to Langgraph\",\n      \"subtopics\": [\n        {\n          \"title\": \"Definition and History\",\n          \"key_concepts\": [\n            {\n              \"type\": \"definition\",\n              \"content\": \"Langgraph is a type of language model that uses graph-based neural networks to learn and represent language\"\n            },\n            {\n              \"type\": \"example\",\n              \"content\": \"Langgraph has been used in various applications such as language translation, text summarization, and chatbots\"\n            }\n          ],\n          \"discussion_questions\": [\n            \"What are the advantages of using graph-based neural networks in language models?\",\n            \"How does Langgraph differ from other language models?\"\n          ],\n          \"hands_on_activities\": [\n            {\n              \"title\": \"Langgraph Tutorial\",\n              \"description\": \"Complete a tutorial on building a simple Langgraph model using a popular deep learning framework\"\n            },\n            {\n              \"title\": \"Langgraph Exploration\",\n              \"description\": \"Explore the Langgraph model architecture and its components using a visualization tool\"\n            }\n          ],\n          \"reflective_questions\": [\n            \"What are the potential limitations of Langgraph models?\",\n            \"How can Langgraph be used in real-world applications?\"\n          ],\n          \"assessment_ideas\": [\n            {\n              \"type\": \"quiz\",\n              \"description\": \"Multiple-choice quiz on Langgraph fundamentals\"\n            },\n            {\n              \"type\": \"project\",\n              \"description\": \"Build a simple Langgraph model using a popular deep learning framework\"\n            }\n          ]\n        },\n        {\n          \"title\": \"Langgraph Architecture\",\n          \"key_concepts\": [\n            {\n              \"type\": \"illustration\",\n              \"content\": \"Diagram of the Langgraph model architecture\"\n            },\n            {\n              \"type\": \"example\",\n              \"content\": \"Code snippet of a Langgraph model implementation\"\n            }\n          ],\n          \"discussion_questions\": [\n            \"How does the graph-based neural network architecture of Langgraph enable it to learn complex language patterns?\",\n            \"What are the advantages and disadvantages of using a graph-based approach in language models?\"\n          ],\n          \"hands_on_activities\": [\n            {\n              \"title\": \"Langgraph Model Implementation\",\n              \"description\": \"Implement a simple Langgraph model using a popular deep learning framework\"\n            },\n            {\n              \"title\": \"Langgraph Model Optimization\",\n              \"description\": \"Optimize the performance of a Langgraph model using hyperparameter tuning\"\n            }\n          ],\n          \"reflective_questions\": [\n            \"How does the Langgraph model architecture enable it to handle out-of-vocabulary words?\",\n            \"What are the potential applications of Langgraph in natural language processing tasks?\"\n          ],\n          \"assessment_ideas\": [\n            {\n              \"type\": \"written task\",\n              \"description\": \"Write a short essay on the Langgraph model architecture and its advantages\"\n            },\n            {\n              \"type\": \"project\",\n              \"description\": \"Build a Langgraph model for a specific natural language processing task\"\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"title\": \"Applications of Langgraph\",\n      \"subtopics\": [\n        {\n          \"title\": \"Language Translation\",\n          \"key_concepts\": [\n            {\n              \"type\": \"definition\",\n              \"content\": \"Language translation is the process of translating text from one language to another\"\n            },\n            {\n              \"type\": \"example\",\n              \"content\": \"Langgraph has been used in language translation tasks such as translating English to Spanish\"\n            }\n          ],\n          \"discussion_questions\": [\n            \"How does Langgraph enable language translation tasks?\",\n            \"What are the challenges of using Langgraph in language translation tasks?\"\n          ],\n          \"hands_on_activities\": [\n            {\n              \"title\": \"Langgraph Language Translation\",\n              \"description\": \"Use a Langgraph model to translate text from one language to another\"\n            },\n            {\n              \"title\": \"Langgraph Language Translation Evaluation\",\n              \"description\": \"Evaluate the performance of a Langgraph model on a language translation task\"\n            }\n          ],\n          \"reflective_questions\": [\n            \"What are the potential applications of Langgraph in language translation tasks?\",\n            \"How can Langgraph be used to improve language translation tasks?\"\n          ],\n          \"assessment_ideas\": [\n            {\n              \"type\": \"quiz\",\n              \"description\": \"Multiple-choice quiz on Langgraph language translation\"\n            },\n            {\n              \"type\": \"project\",\n              \"description\": \"Build a Langgraph model for a language translation task\"\n            }\n          ]\n        },\n        {\n          \"title\": \"Text Summarization\",\n          \"key_concepts\": [\n            {\n              \"type\": \"definition\",\n              \"content\": \"Text summarization is the process of summarizing a large document into a shorter summary\"\n            },\n            {\n              \"type\": \"example\",\n              \"content\": \"Langgraph has been used in text summarization tasks such as summarizing news articles\"\n            }\n          ],\n          \"discussion_questions\": [\n            \"How does Langgraph enable text summarization tasks?\",\n            \"What are the challenges of using Langgraph in text summarization tasks?\"\n          ],\n          \"hands_on_activities\": [\n            {\n              \"title\": \"Langgraph Text Summarization\",\n              \"description\": \"Use a Langgraph model to summarize a large document\"\n            },\n            {\n              \"title\": \"Langgraph Text Summarization Evaluation\",\n              \"description\": \"Evaluate the performance of a Langgraph model on a text summarization task\"\n            }\n          ],\n          \"reflective_questions\": [\n            \"What are the potential applications of Langgraph in text summarization tasks?\",\n            \"How can Langgraph be used to improve text summarization tasks?\"\n          ],\n          \"assessment_ideas\": [\n            {\n              \"type\": \"written task\",\n              \"description\": \"Write a short essay on the use of Langgraph in text summarization tasks\"\n            },\n            {\n              \"type\": \"project\",\n              \"description\": \"Build a Langgraph model for a text summarization task\"\n            }\n          ]\n        }\n      ]\n    }\n  ],\n  \"learning_adaptations\": \"For students with different learning levels, the lesson can be adapted by providing additional support or challenges. For example, students who are struggling with the concept of Langgraph can be provided with additional tutorials or practice exercises, while students who are advanced can be given more complex tasks or projects to work on.\",\n  \"real_world_applications\": \"Langgraph has many real-world applications, including language translation, text summarization, and chatbots. Students can explore these applications and learn how Langgraph is being used in industry and research.\",\n  \"ethical_considerations\": \"As with any technology, there are ethical considerations to be taken into account when using Langgraph. For example, students should be\"\n}"
+    }
+  ]
+}
+
+
+========================================
+COMMAND 3: Create flashcards for the topic "Python"
+========================================
+
+Tool: generate_flashcards  
+Input:
+{
+  "topic": "Python",
+  "num": 2
+}
+
+Response:
+{
+  "result": [
+    {
+      "question": "What is Python?",
+      "answer": "A high-level, interpreted programming language.",
+      "explanation": "Python is known for its simplicity, readability, and large community of developers."
+    },
+    {
+      "question": "What is indentation in Python?",
+      "answer": "A way of defining the structure of the code using spaces or tabs.",
+      "explanation": "Indentation is used to denote block-level structure in Python, making the code more readable."
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+[project]
+name = "educhain-mcp"
+version = "0.1.0"
+description = "MCP server integrated with EduChain"
+dependencies = ["mcp[cli]", "educhain", "langchain-groq"]
+requires-python = ">=3.11,<3.12"
